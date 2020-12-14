@@ -1,0 +1,6 @@
+import  re
+line = input()
+word = input()
+regex = rf"\b{word}\b"
+result = len(re.findall(regex, line, re.IGNORECASE))
+print(result)
