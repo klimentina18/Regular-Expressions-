@@ -1,0 +1,12 @@
+import  re
+
+pattern = r"\d+"
+
+while True:
+    data = input()
+    if not data:
+        break
+    else:
+        result = re.findall(pattern, data)
+        for m in result:
+            print(m, end=" ")
