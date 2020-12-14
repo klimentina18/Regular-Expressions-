@@ -1,0 +1,18 @@
+import  re
+
+data = input()
+regex = r"\b_[a-zA-Z0-9]+\b"
+result = [m[1:] for m in re.findall(regex, data)]
+print(",".join(result))
+
+#import  re
+#result = []
+#data = input()
+#regex = r"\b_[a-zA-Z0-9]+\b"
+#for m in  re.findall(regex, data):
+# m = m[1:]
+ result.append(m)
+
+#print(",".join(result))
+
+
