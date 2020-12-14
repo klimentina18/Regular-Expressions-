@@ -1,0 +1,7 @@
+import re
+text = input()
+
+regex = r"( |^)([a-zA-Z0-9]+)([-\._])?([a-zA-Z0-9]+)?(@)([a-zA-Z\-?a-zA-Z+?]+[\.?][a-zA-Z]+)(\.[a-zA-Z]+)?"
+
+for match in re.findall(regex,text):
+    print("".join(match))
