@@ -1,0 +1,6 @@
+import re
+text = input()
+pattern = r'(\d{2})([/\.-])([A-Z][a-z]{2})\2(\d{4})'
+for m in re.findall(pattern, text):
+    day, sep, month, year = m
+    print(f"Day: {day}, Month: {month}, Year: {year}")
